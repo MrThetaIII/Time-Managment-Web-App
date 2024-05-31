@@ -8,5 +8,6 @@
 - POSTGRES_PASSWORD
 - POSTGRES_TEST_DB
 - ENV
+* Run `db-migrate up` in the backend directory
 * Run the backend with `npm run start` in the backend directory
 * Run the frontend with `npm run start` in the frontend directory
