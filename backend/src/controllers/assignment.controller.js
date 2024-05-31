@@ -1,0 +1,55 @@
+// [ ] Extension Controller
+
+import { AssignmentStore } from "../database/models/assignment.model.js";
+
+const store = new AssignmentStore()
+
+export const index = async (_req, res) => {
+    try {
+        const { starting_hour, current_date } = _req.body;
+        const results = await store.index(starting_hour, current_date);
+        res.json(results);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+}
+
+export const create = async (_req, res) => {
+    try {
+        const { name, description, time, duration, deadline, task_id } = _req.body;
+        await store.insert({ name, description, time, duration, deadline, task_id });
+        res.status(201).send('Assignment created');
+    } catch (err) {
+        res.status(400).json(err);
+    }
+}
+
+export const update = async (_req, res) => {
+    try {
+        const { id, name, description, time, duration, deadline, color, completed } = _req.body;
+        await store.update({ id, name, description, time, duration, deadline, color, completed });
+        res.status(201).send('Assignment updated');
+    } catch (err) {
+        res.status(400).json(err);
+    }
+}
+
+export const remove = async (_req, res) => {
+    try {
+        const { id } = _req.body;
+        await store.delete(id);
+        res.status(201).send('Assignment deleted');
+    } catch (err) {
+        res.status(400).json(err);
+    }
+}
+
+export const last_extension = async (_req, res) => {
+    try {
+        const { id } = _req.body;
+        const result = await store.last_extension(id);
+        res.json(result);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+}

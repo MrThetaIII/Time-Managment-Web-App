@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon --es-module-specifier-resolution=node src/app.js",
+    "migrate": "db-migrate up",
+    "migrate-test": "db-migrate --env test up",
+    "migrate-undo": "db-migrate reset",
+    "migrate-undo-test": "db-migrate --env test reset",
+    "restart-db": "npm run migrate-undo && npm run migrate",
+    "initiate": "npm run migrate-undo && npm run migrate && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "db-migrate-pg": "^1.2.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21",
+    "pg": "^8.10.0"
+  }
+}
