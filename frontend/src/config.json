@@ -1,0 +1,230 @@
+{
+    "measurements":{
+        "pixelsPerMinute": 2.5,
+        "pixelsPerDay": 60,
+        "headersHeight": 50,
+        "daysWidth": 150
+    },
+    "days": [
+        {
+            "ID": 0,
+            "name": "Saturday",
+            "shortName": "Sat"
+        },
+        {
+            "ID": 1,
+            "name": "Sunday",
+            "shortName": "Sun"
+        },
+        {
+            "ID": 2,
+            "name": "Monday",
+            "shortName": "Mon"
+        },
+        {
+            "ID": 3,
+            "name": "Tuesday",
+            "shortName": "Tue"
+        },
+        {
+            "ID": 4,
+            "name": "Wednesday",
+            "shortName": "Wed"
+        },
+        {
+            "ID": 5,
+            "name": "Thursday",
+            "shortName": "Thu"
+        },
+        {
+            "ID": 6,
+            "name": "Friday",
+            "shortName": "Fri"
+        }
+    ],
+    "states":{
+        "assignment_states": {
+            "about_to_start": {
+                "name" : "About to start",
+                "color" : "#F29A1E"
+            },
+            "in_progress": {
+                "name" : "In progress",
+                "color" : "#83E528"
+            },
+            "idle": {
+                "name" : "Idle",
+                "color" : "#FCF803"
+            },
+            "due_extension": {
+                "name" : "Due extension",
+                "color" : "#C81EF2"
+            },
+            "overdue": {
+                "name" : "Overdue",
+                "color" : "#1B0D4A"
+            },
+            "completed_before_deadline": {
+                "name" : "Completed before deadline",
+                "color" : "#00891B"
+            },
+            "completed_after_deadline": {
+                "name" : "Completed after deadline",
+                "color" : "#2929EB"
+            },
+            "about_to_be_overdue": {
+                "name" : "About to be overdue",
+                "color" : "#EB2121"
+            },
+            "about_to_finalize": {
+                "name" : "About to finalize",
+                "color" : "#12E0CF"
+            },
+            "about_to_end": {
+                "name" : "About to end",
+                "color" : "#D8696F"
+            },
+            "ended_uncompleted": {
+                "name" : "Ended uncompleted",
+                "color" : "#930000"
+            }
+        },
+        "task_states": {
+            "about_to_start": {
+                "name" : "About to start",
+                "color" : "#F29A1E"
+            },
+            "in_progress": {
+                "name" : "In progress",
+                "color" : "#83E528"
+            },
+            "idle": {
+                "name" : "Idle",
+                "color" : "#FCF803"
+            },
+            "due_extension": {
+                "name" : "Due extension",
+                "color" : "#C81EF2"
+            },
+            "completed": {
+                "name" : "Completed",
+                "color" : "#00891B"
+            },
+            "about_to_finalize": {
+                "name" : "About to finalize",
+                "color" : "#12E0CF"
+            },
+            "about_to_end": {
+                "name" : "About to end",
+                "color" : "#D8696F"
+            },
+            "ended_uncompleted": {
+                "name" : "Ended uncompleted",
+                "color" : "#930000"
+            }
+        },
+        "scheduled_events_states": {
+            "about_to_start": {
+                "name" : "About to start",
+                "color" : "#F29A1E"
+            },
+            "in_progress": {
+                "name" : "In progress",
+                "color" : "#83E528"
+            },
+            "idle": {
+                "name" : "Idle",
+                "color" : "#FCF803"
+            },
+            "ended": {
+                "name" : "Ended",
+                "color" : "#0B1BFA"
+            }
+        },
+        "task_extension_states": {
+            "about_to_start": {
+                "name" : "About to start",
+                "color" : "#F29A1E"
+            },
+            "in_progress": {
+                "name" : "In progress",
+                "color" : "#83E528"
+            },
+            "idle": {
+                "name" : "Idle",
+                "color" : "#FCF803"
+            },
+            "due_extension": {
+                "name" : "Due extension",
+                "color" : "#C81EF2"
+            },
+            "completed": {
+                "name" : "Completed",
+                "color" : "#00891B"
+            },
+            "about_to_finalize": {
+                "name" : "About to finalize",
+                "color" : "#12E0CF"
+            },
+            "about_to_end": {
+                "name" : "About to end",
+                "color" : "#D8696F"
+            },
+            "ended_uncompleted": {
+                "name" : "Ended uncompleted",
+                "color" : "#930000"
+            }
+        },
+        "assignment_extension_states": {
+            "about_to_start": {
+                "name" : "About to start",
+                "color" : "#F29A1E"
+            },
+            "in_progress": {
+                "name" : "In progress",
+                "color" : "#83E528"
+            },
+            "idle": {
+                "name" : "Idle",
+                "color" : "#FCF803"
+            },
+            "due_extension": {
+                "name" : "Due extension",
+                "color" : "#C81EF2"
+            },
+            "overdue": {
+                "name" : "Overdue",
+                "color" : "#1B0D4A"
+            },
+            "completed_before_deadline": {
+                "name" : "Completed before deadline",
+                "color" : "#00891B"
+            },
+            "completed_after_deadline": {
+                "name" : "Completed after deadline",
+                "color" : "#2929EB"
+            },
+            "about_to_be_overdue": {
+                "name" : "About to be overdue",
+                "color" : "#EB2121"
+            },
+            "about_to_finalize": {
+                "name" : "About to finalize",
+                "color" : "#12E0CF"
+            },
+            "about_to_end": {
+                "name" : "About to end",
+                "color" : "#D8696F"
+            },
+            "ended_uncompleted": {
+                "name" : "Ended uncompleted",
+                "color" : "#930000"
+            }
+        }
+    },
+    "periods":{
+        "startHour": 4,
+        "endHour": 22,
+        "notificationPeriod": 10
+    }
+}
