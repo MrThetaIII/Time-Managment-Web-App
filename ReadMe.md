@@ -9,3 +9,4 @@
 - POSTGRES_TEST_DB
 - ENV
 * Run the backend with `npm run start` in the backend directory
+* Run the frontend with `npm run start` in the frontend directory
